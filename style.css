@@ -1,0 +1,78 @@
+// style.css
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+body.dark .container {
+  background: #2e2e2e;
+  color: #fff;
+}
+#appTitleInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+#appTitleInput:focus {
+  outline: 2px solid #007BFF;
+}
+#appTitle {
+  display: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+input[type="text"],
+input[type="datetime-local"],
+select {
+  padding: 10px;
+  width: calc(100% - 22px);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+button {
+  margin-top: 5px;
+}
+.filters {
+  text-align: center;
+  margin-top: 10px;
+}
+.filters button {
+  margin: 0 5px;
+}
+
+//github.com/krsna1901
